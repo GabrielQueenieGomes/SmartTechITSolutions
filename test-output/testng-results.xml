@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-24T10:32:01 EST" name="Suite" finished-at="2025-11-24T10:32:41 EST" duration-ms="39972">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.SmartTechRunner@595b007d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-11-24T10:32:01 EST" name="SmartTechTest" finished-at="2025-11-24T10:32:41 EST" duration-ms="39972">
+      <class name="com.runner.SmartTechRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.SmartTechRunner@595b007d]" started-at="2025-11-24T10:32:01 EST" name="setUpClass" finished-at="2025-11-24T10:32:02 EST" duration-ms="582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3e33d73e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.SmartTechRunner@595b007d]" started-at="2025-11-24T10:32:02 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-24T10:32:09 EST" duration-ms="6700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login function test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.SmartTechRunner@595b007d]" started-at="2025-11-24T10:32:09 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-24T10:32:14 EST" duration-ms="5496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login function test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.SmartTechRunner@595b007d]" started-at="2025-11-24T10:32:14 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-24T10:32:20 EST" duration-ms="5404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login function test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.SmartTechRunner@595b007d]" started-at="2025-11-24T10:32:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-24T10:32:25 EST" duration-ms="5401" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login function test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.SmartTechRunner@595b007d]" started-at="2025-11-24T10:32:25 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-24T10:32:30 EST" duration-ms="5330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login function test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.SmartTechRunner@595b007d]" started-at="2025-11-24T10:32:30 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-24T10:32:36 EST" duration-ms="5471" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login function test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.SmartTechRunner@595b007d]" started-at="2025-11-24T10:32:36 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-24T10:32:41 EST" duration-ms="5358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login function test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.SmartTechRunner@595b007d]" started-at="2025-11-24T10:32:41 EST" name="tearDownClass" finished-at="2025-11-24T10:32:41 EST" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.runner.SmartTechRunner -->
+    </test> <!-- SmartTechTest -->
+  </suite> <!-- Suite -->
+</testng-results>
