@@ -9,6 +9,7 @@ public class OnlineBanking {
 	
 		int b = 20; // local
 		System.out.println("This is void.");
+		b = 50;
 		System.out.println("B value = " + b);
 		PageObjectModel obj = new PageObjectModel();
 		System.out.println("A value = " + obj.a);
