@@ -7,6 +7,7 @@ public class TestRun extends OnlineBanking { // multi-level relations
 public static void main(String[] args) {
 	// basic owner class
 	OnlineBanking obj = new TestRun();
+	obj.getAccount();
 		
  //obj.getLogin().getAccount(); // mid-level java = using current class
 	

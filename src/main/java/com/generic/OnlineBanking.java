@@ -1,27 +1,47 @@
 package com.generic;
 
-import com.page.object.model.PageObjectModel;
+import java.util.List;
 
-public class OnlineBanking implements SmartBanking {
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+WebDriver driver;
+
+public class OnlineBanking implements SmartBanking { //mid-level polymorphism rules
+	driver = new WebDriver();
+	//rule 1 = number of parameters
+	//rule 2 = data type
+	//rule 3 = position of data types
 
 	// polymorphism via override
 	@Override
-	public void getLogin() {
+	public void getLogin(String b, double d) {
 		// TODO Auto-generated method stub
+		
+	} // add any variable  parameter = 0
+
+	@Override
+	public void getLogout(int a) {
+		driver.findElement(By.xpath("//*[text()='Logout'"));
 		
 	}
 
 	@Override
-	public void getLogout() {
-		// TODO Auto-generated method stub
+	public void getAccount(double b, String d) { // 2 parameters
+		driver.findElement(By.xpath("//*[text()='Account'"));
 		
-	}
+		List<WebElement> rows = driver.findElement(By.xpath("//table/tbody/tr")); // column 3 * row 2 = 6 columns
+		System.out.println("Row count = " + rows.size());
+		
+		List<WebElement> columns = driver.findElement(By.xpath("//table/tbody/tr/td"));
+		System.out.println("Columns count = " + columns.size());
+		
+		System.out.println("First value + " + columns.get(0).getText());
+	} // basic java not allowed
+	
+	// overloading = repeatedly using same things under same class
 
-	@Override
-	public void getAccount() {
-		// TODO Auto-generated method stub
-		
-	} // single-level inheritance, 2-class relationship
+	// single-level inheritance, 2-class relationship
 
 	
 	/*
