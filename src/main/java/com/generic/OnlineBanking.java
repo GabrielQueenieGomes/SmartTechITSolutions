@@ -12,7 +12,9 @@ public class OnlineBanking {
 		b = 50;
 		System.out.println("B value = " + b);
 		PageObjectModel obj = new PageObjectModel();
+		obj.a = 66;
 		System.out.println("A value = " + obj.a);
+		PageObjectModel.c = 99;
 		System.out.println("C value = " + PageObjectModel.c);
 	}
 	
