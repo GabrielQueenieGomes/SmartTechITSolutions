@@ -2,26 +2,27 @@ package com.generic;
 
 import com.page.object.model.PageObjectModel;
 
-public class OnlineBanking {
+public class OnlineBanking extends PageObjectModel { // single-level inheritance, 2-class relationship
 
 	
-	public void getLogin() {
+	public OnlineBanking getLogin() {
 	
 		int b = 20; // local
 		System.out.println("This is void.");
 		b = 50;
 		System.out.println("B value = " + b);
-		PageObjectModel obj = new PageObjectModel();
-		obj.a = 66;
-		System.out.println("A value = " + obj.a);
-		PageObjectModel.c = 99;
-		System.out.println("C value = " + PageObjectModel.c);
+		PageObjectModel obj = new OnlineBanking();
+		//obj.a = 66;
+		System.out.println("A value = " + obj.getA());
+		//PageObjectModel.c = 99;
+		System.out.println("C value = " + PageObjectModel.getC());
+		return null;
 	}
 	
 	public int getAccount() {
-		PageObjectModel obj = new PageObjectModel();
-		System.out.println("A value = " + obj.a);
-		System.out.println("C value = " + PageObjectModel.c);
+		OnlineBanking obj = new OnlineBanking();
+		System.out.println("A value = " + obj.getA());
+		System.out.println("C value = " + PageObjectModel.getC());
 		System.out.println("Return method");
 		return 10;
 	}
