@@ -21,6 +21,7 @@ public class JavaLooping {
 		}
 		
 		System.out.println("Negative for loop");
+		
 for(int i = 100;i >= 0;i--) {
 	System.out.println(i);
 		}
@@ -38,25 +39,11 @@ for(int i=0;i<menubar.size();i++) {
 	// list = ListName.get(i)
 	System.out.println(menubar.get(i).getText());
 }
+
+
 driver.quit();
 
-driver.manage().window().maximize();
-driver.get("https://www.macys.com/");
-List<WebElement> macysmenu=driver.findElements(By.xpath("//*[@id='nav-top-menu']//a"));
-System.out.println(macysmenu.size());
-for(int i=0;i<macysmenu.size();i++) {
- System.out.println(macysmenu.get(i).getText());
-}
-driver.quit();
 
-driver.manage().window().maximize();
-driver.get("https://www.amazon.com/");
-List<WebElement> awsmenu=driver.findElements(By.xpath("//*[@id='nav-xshop']//a"));
-System.out.println(awsmenu.size());
-for(int i=0;i<awsmenu.size();i++) {
- System.out.println(awsmenu.get(i).getText());
-}
-driver.quit();
 
 	}
 
