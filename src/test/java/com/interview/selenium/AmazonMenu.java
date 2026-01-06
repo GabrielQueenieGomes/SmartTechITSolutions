@@ -13,15 +13,24 @@ public class AmazonMenu {
 	public void getMenu() {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.amazon.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		driver.get("https://www.amazon.com/");
 		List<WebElement> awsmenu=driver.findElements(By.xpath("//*[@class='nav-fill']//a"));
+		// List<WebElement> awsmenu=driver.findElements(By.xpath("//div[@id='nav-xshop']//a/span"));
 		System.out.println(awsmenu.size());
 		
 		for(int i=0;i<awsmenu.size();i++) {
 		 System.out.println(awsmenu.get(i).getText());
 		}
 		
+		for (WebElement menu : awsmenu) {
+			// System.out.println("Text: [" + menu.getText() + "] | Link: " + menu.getAttribute("href"));
+			
+			  String text = menu.getText().trim(); if (!text.isEmpty()) {
+			  System.out.println(text); }
+			 
+		}
+
 		driver.quit();
 	}
 
