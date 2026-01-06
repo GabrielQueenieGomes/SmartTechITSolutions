@@ -15,7 +15,7 @@ public class AmazonMenu {
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-		List<WebElement> awsmenu=driver.findElements(By.xpath("//*[@id='nav-xshop-container']"));
+		List<WebElement> awsmenu=driver.findElements(By.xpath("//*[@class='nav-fill']//a"));
 		System.out.println(awsmenu.size());
 		
 		for(int i=0;i<awsmenu.size();i++) {
