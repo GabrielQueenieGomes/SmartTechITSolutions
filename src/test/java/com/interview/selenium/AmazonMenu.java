@@ -1,5 +1,6 @@
 package com.interview.selenium;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -13,7 +14,8 @@ public class AmazonMenu {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.com/");
-		List<WebElement> awsmenu=driver.findElements(By.xpath("//*[@class='nav-sprite']//a"));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		List<WebElement> awsmenu=driver.findElements(By.xpath("//*[@id='nav-xshop-container']"));
 		System.out.println(awsmenu.size());
 		
 		for(int i=0;i<awsmenu.size();i++) {

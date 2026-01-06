@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class CostcoMenu {
 
@@ -25,6 +26,12 @@ public class CostcoMenu {
 			System.out.println(menubar.get(i).getText());
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("arguments[0].style.border='3px solid red'", menubar.get(i));
+			Actions act = new Actions(driver);
+			
+			if(menubar.get(i).getText().contains("Optical")) {
+				System.out.println("Found optical!");
+				act.moveToElement(menubar.get(i)).build().perform();
+			}
 		}
 
 

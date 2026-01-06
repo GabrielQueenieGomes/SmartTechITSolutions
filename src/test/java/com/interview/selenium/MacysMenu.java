@@ -13,7 +13,7 @@ public class MacysMenu {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.macys.com/");
-		List<WebElement> macysmenu=driver.findElements(By.xpath("//*[@class='icon-24x24 menu-icon mr-12']"));
+		List<WebElement> macysmenu=driver.findElements(By.xpath("//*[@id='nav-top-menu']//a"));
 		System.out.println(macysmenu.size());
 			
 		for(int i=0;i<macysmenu.size();i++) {
