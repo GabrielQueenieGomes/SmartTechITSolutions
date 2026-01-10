@@ -24,7 +24,7 @@ public class CostcoMenu {
 			// num = i
 			// list = ListName.get(i)
 			System.out.println(menubar.get(i).getText());
-			JavascriptExecutor jse = (JavascriptExecutor)driver;
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
 			jse.executeScript("arguments[0].style.border='3px solid red'", menubar.get(i));
 			Actions act = new Actions(driver);
 			
